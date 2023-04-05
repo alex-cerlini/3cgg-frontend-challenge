@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react';
 
-const App = (): JSX.Element => {
-  return <Box></Box>;
-};
+function App(): JSX.Element {
+  return <Box />;
+}
 
 export default App;
