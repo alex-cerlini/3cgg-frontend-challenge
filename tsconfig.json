@@ -17,7 +17,8 @@
     "allowUmdGlobalAccess": true,
     "types": ["node"],
     "paths": {
-      "@components*": ["./src/components/*"]
+      "@components*": ["./src/components/*"],
+      "@templates*": ["./src/templates/*"]
     }
   },
   "include": ["./src"]

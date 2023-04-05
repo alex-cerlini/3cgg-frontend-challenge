@@ -6,7 +6,7 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: [{ find: '@components', replacement: path.resolve(__dirname, 'src/components') }],
+    alias: [{ find: '@components', replacement: path.resolve(__dirname, 'src/components') }, { find: '@templates', replacement: path.resolve(__dirname, 'src/templates') }],
   },
   
 });
