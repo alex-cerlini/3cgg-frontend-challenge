@@ -14,7 +14,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "allowUmdGlobalAccess": true
+    "allowUmdGlobalAccess": true,
+    "types": ["node"],
+    "paths": {
+      "@components*": ["./src/components/*"]
+    }
   },
   "include": ["./src"]
 }
