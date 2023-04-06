@@ -1,9 +1,13 @@
 import MenuTemplate from '@templates/menu';
+import * as Style from './styles';
 
 function Home() {
   return (
     <MenuTemplate>
-      <h1>HomePage</h1>
+      <Style.Container>
+        <Style.Title>Seja bem-vindo a Pokedex!</Style.Title>
+        <Style.SubTitle>Utilize o menu para navegar.</Style.SubTitle>
+      </Style.Container>
     </MenuTemplate>
   );
 }
