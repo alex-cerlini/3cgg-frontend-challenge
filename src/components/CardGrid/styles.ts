@@ -1,4 +1,6 @@
 import {
+  Box,
+  BoxProps,
   Card,
   CardBody,
   CardBodyProps,
@@ -13,6 +15,7 @@ import {
 import styled from '@emotion/styled';
 
 export const CustomCard = styled(Card)<CardProps>`
+  position: relative;
   width: 300px;
   height: 350px;
 `;
@@ -21,6 +24,7 @@ export const CustomBody = styled(CardBody)<CardBodyProps>`
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
 `;
 
 export const CustomFooter = styled(CardFooter)<CardFooterProps>`
@@ -43,4 +47,12 @@ export const TypesContainer = styled(Flex)<FlexProps>`
   flex-direction: column;
   row-gap: 0.5rem;
   height: 68px;
+`;
+
+export const FavoriteContainer = styled(Box)<BoxProps>`
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2em;
+  cursor: pointer;
 `;
