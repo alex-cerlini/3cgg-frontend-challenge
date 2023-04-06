@@ -1,10 +1,10 @@
 import {
   Card,
-  CardProps,
   CardBody,
   CardBodyProps,
   CardFooter,
   CardFooterProps,
+  CardProps,
   Flex,
   FlexProps,
   Text,
@@ -33,9 +33,9 @@ export const TitleContainer = styled(Flex)<FlexProps>`
   justify-content: space-between;
 `;
 
-export const pokemonId = styled(Text)<TextProps>``;
+export const PokemonId = styled(Text)<TextProps>``;
 
-export const pokemonName = styled(Text)<TextProps>`
+export const PokemonName = styled(Text)<TextProps>`
   font-size: 1.25rem;
 `;
 

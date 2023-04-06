@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 import { Icon } from '@chakra-ui/react';
 
 function Pokeball() {

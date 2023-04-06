@@ -1,7 +1,9 @@
 import { Flex, FlexProps } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 
-export const Container = styled(Flex)<FlexProps>`
+import LabelEnum from './enum';
+
+const Container = styled(Flex)<FlexProps & { type: LabelEnum }>`
   background-color: ${(props) => props.type};
   color: black;
   justify-content: center;
@@ -11,3 +13,5 @@ export const Container = styled(Flex)<FlexProps>`
   height: 30px;
   font-size: 0.875rem;
 `;
+
+export default Container;

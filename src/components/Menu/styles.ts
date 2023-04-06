@@ -1,7 +1,7 @@
 import { Flex, FlexProps } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 
-export const Container = styled(Flex)<FlexProps>`
+const Container = styled(Flex)<FlexProps>`
   background-color: ${(props) => props.theme.colors.purple['500']};
   color: white;
   padding: 0 1rem;
@@ -10,3 +10,5 @@ export const Container = styled(Flex)<FlexProps>`
   align-items: center;
   column-gap: 2rem;
 `;
+
+export default Container;

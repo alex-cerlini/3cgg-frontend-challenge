@@ -1,10 +1,8 @@
+import Container from './styles';
 import { LabelProps } from './types';
-import * as Style from './styles';
 
 function Label({ title, type }: LabelProps) {
-  return (
-    <Style.Container type={type}>{title.toLocaleUpperCase()}</Style.Container>
-  );
+  return <Container type={type}>{title.toLocaleUpperCase()}</Container>;
 }
 
 export default Label;

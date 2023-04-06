@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+
 enum LabelEnum {
   normal = '#a6ac7a',
   fighting = '#c02f27',

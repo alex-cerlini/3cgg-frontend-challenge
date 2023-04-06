@@ -1,7 +1,8 @@
-import * as Style from './styles';
 import { Image } from '@chakra-ui/react';
 import Label from '@components/Label';
 import LabelEnum from '@components/Label/enum';
+
+import * as Style from './styles';
 
 function CardGrid() {
   return (
@@ -15,8 +16,8 @@ function CardGrid() {
       </Style.CustomBody>
       <Style.CustomFooter>
         <Style.TitleContainer>
-          <Style.pokemonId>N° 001</Style.pokemonId>
-          <Style.pokemonName>Bulbasaur</Style.pokemonName>
+          <Style.PokemonId>N° 001</Style.PokemonId>
+          <Style.PokemonName>Bulbasaur</Style.PokemonName>
         </Style.TitleContainer>
         <Style.TypesContainer>
           <Label title="grass" type={LabelEnum.grass} />

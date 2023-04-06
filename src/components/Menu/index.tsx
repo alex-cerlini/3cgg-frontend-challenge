@@ -1,14 +1,16 @@
-import Pokeball from '@components/icons/Pokeball';
-import * as Style from './styles';
 import { Link } from 'react-router-dom';
+
+import Pokeball from '@components/icons/Pokeball';
+
+import Container from './styles';
 
 function Menu() {
   return (
-    <Style.Container>
+    <Container>
       <Pokeball />
       <Link to="/">Home</Link>
       <Link to="/list">Listagem</Link>
-    </Style.Container>
+    </Container>
   );
 }
 
