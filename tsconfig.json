@@ -18,7 +18,8 @@
     "types": ["node"],
     "paths": {
       "@components*": ["./src/components/*"],
-      "@templates*": ["./src/templates/*"]
+      "@templates*": ["./src/templates/*"],
+      "@pages*": ["./src/pages/*"]
     }
   },
   "include": ["./src"]
