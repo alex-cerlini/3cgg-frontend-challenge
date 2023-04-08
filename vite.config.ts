@@ -9,7 +9,8 @@ export default defineConfig({
     alias: [
       { find: '@components', replacement: path.resolve(__dirname, 'src/components/') },
       { find: '@templates', replacement: path.resolve(__dirname, 'src/templates/') },
-      { find: '@pages', replacement: path.resolve(__dirname, 'src/pages/') }],
+      { find: '@pages', replacement: path.resolve(__dirname, 'src/pages/') },
+      { find: '@utils', replacement: path.resolve(__dirname, 'src/utils/') }]
   },
   
 });
