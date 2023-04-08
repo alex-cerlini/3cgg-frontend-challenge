@@ -14,7 +14,15 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "allowUmdGlobalAccess": true
+    "allowUmdGlobalAccess": true,
+    "types": ["node"],
+    "paths": {
+      "@components*": ["./src/components/*"],
+      "@templates*": ["./src/templates/*"],
+      "@pages*": ["./src/pages/*"],
+      "@utils*": ["./src/utils/*"],
+      "@stores*": ["./src/stores/*"]
+    }
   },
   "include": ["./src"]
 }

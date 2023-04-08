@@ -1,97 +1,65 @@
-# ReactTS 18 with Chakra UI and Vite
+<!-- Logo -->
+<p align="center">
+  <h1>Poke<span style="color:#805ad5">dex</span></h1>
+</p>
 
-This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang.org/) + [Chakra UI](https://chakra-ui.com) boilerplate to be built with [Vite](https://vitejs.dev). It also includes [Husky](https://typicode.github.io/husk) and a pre-commit hook that runs `yarn format`.
+<!-- Badges -->
+<p align="center">
+  <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img alt="Typescript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img alt="React Router" src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" />
+  <img alt="Redux" src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" />
+  <img alt="ESLint" src="https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white" />
+  <img alt="Github" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+</p>
 
-## What's inside?
+<!-- Project Design -->
+<img width="500px" src="https://imgur.com/k6jKZCZ.png">
 
-- [ReactJS](https://reactjs.org)
-- [Vite](https://vitejs.dev)
-- [TypeScript](https://www.typescriptlang.org)
-- [Chakra UI](https://chakra-ui.com)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Jest](https://jestjs.io)
-- [Testing Library](https://testing-library.com)
-- [Eslint](https://eslint.org)
-- [Prettier](https://prettier.io)
-- [Husky](https://typicode.github.io/husky)
+<img width="500px" src="https://imgur.com/2zhGSzA.png">
 
-\+ other smaller dependencies
+<img width="500px" src="https://imgur.com/XPMGnCF.png">
 
-## Getting started
+<!-- Summary -->
 
-1. Create the project.
+<h2>Summary</h2>
 
-   ```bash
-   npx degit The24thDS/vite-reactts18-chakra-jest-husky my-app
-   ```
+- [🔖 About](#about)
+- [💻 Demo](#demo)
+- [🚀 Technologies](#technologies)
 
-2. Access the project directory.
+<a id="about"></a>
 
-   ```bash
-   cd my-app
-   ```
+## 🔖 About
 
-3. Initialize a git repository.
+**Pokedex** is an application that makes a request to an API (pokeapi.co) and returns the pokemons on screen. There is the possibility of favorite pokemons by clicking on the heart and this will be persisted even in localStorage.
 
-   ```bash
-   git init
-   ```
+<a id="demo"></a>
 
-4. Install dependencies.
+## 💻 Demo
 
-   ```bash
-   yarn
-   ```
+This application was hosted by [Vercel](https://vercel.com/) and can be found here: [Pokedex](https://3cgg-frontend-challenge.vercel.app/).
 
-5. Serve with hot reload at http://localhost:5173.
-   ```bash
-   yarn dev
-   ```
+<a id="technologies"></a>
 
-## Recommended VS Code extensions
+## 🚀 Technologies
 
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
+This application uses the following technologies:
 
-## Other commands
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Chakra-Ui](https://chakra-ui.com/)
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/web/guides/quick-start)
+- [Axios](https://axios-http.com/ptbr/)
+- [React Query](https://tanstack.com/query/v3/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Redux](https://redux.js.org/)
+- [Commitizen](https://github.com/commitizen/cz-cli)
 
-### Lint commands
+---
 
-- Run eslint
-  ```bash
-  yarn lint
-  ```
-- Run eslint with fixing
-  ```bash
-  yarn lint:fix
-  ```
-
-### Build commands
-
-```bash
-yarn build
-```
-
-### Test commands
-
-- Run tests with coverage (will open the coverage if all tests succeed)
-  ```bash
-  yarn test
-  ```
-- Watch tests
-  ```bash
-  yarn test:watch
-  ```
-
-### Commit commands
-This project use [commitlint](https://github.com/conventional-changelog/commitlint) to ensure that commit messages are [conventional-changelog](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional) compliants.
-
-To help you build more efficient commit messages, you can use the [commitizen](https://github.com/commitizen/cz-cli) package by running this command :
-```bash
-yarn cz
-```
-
-## License
-
-This project is licensed under the MIT License.
+<p align="center">
+  Made with <span style="color: red;">♥</span> by <a href="https://github.com/alex-cerlini">Alexander Andrade Cerlini</a>
+</p>
