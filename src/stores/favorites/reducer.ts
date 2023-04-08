@@ -1,4 +1,5 @@
 import { createReducer, PayloadAction } from '@reduxjs/toolkit';
+
 import { addFavorite, removeFavorite } from './actions';
 import { initialState, RootState } from './state';
 

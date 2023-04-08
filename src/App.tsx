@@ -1,11 +1,11 @@
 import { QueryClient, QueryClientProvider } from 'react-query';
+import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { PersistGate } from 'redux-persist/integration/react';
 
 import Home from '@pages/Home';
 import List from '@pages/List';
-import { Provider } from 'react-redux';
 import store, { persistor } from '@stores/favorites/store';
-import { PersistGate } from 'redux-persist/integration/react';
 
 const queryClient = new QueryClient();
 

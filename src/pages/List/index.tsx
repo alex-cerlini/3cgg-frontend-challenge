@@ -1,8 +1,5 @@
 import CardGrid from '@components/CardGrid';
-import { RootState } from '@stores/favorites/state';
 import MenuTemplate from '@templates/menu';
-import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
 
 import useList from './hook';
 import Container from './styles';

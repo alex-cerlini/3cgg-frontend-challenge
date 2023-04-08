@@ -1,8 +1,9 @@
-import { RootState } from '@stores/favorites/state';
-import { addFavorite, removeFavorite } from '@stores/favorites/actions';
 import axios from 'axios';
 import { useQuery } from 'react-query';
 import { useDispatch, useSelector } from 'react-redux';
+
+import { addFavorite, removeFavorite } from '@stores/favorites/actions';
+import { RootState } from '@stores/favorites/state';
 
 import { PokemonDataProps } from './types';
 
