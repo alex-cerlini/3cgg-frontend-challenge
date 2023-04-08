@@ -6,9 +6,10 @@ import LabelEnum from '@components/Label/enum';
 
 import useCardGrid from './hook';
 import * as Style from './styles';
+import { CardGridProps } from './types';
 
-function CardGrid() {
-  const { favorited, handleFavorite } = useCardGrid();
+function CardGrid({ name, url }: CardGridProps) {
+  const { favorited, handleFavorite } = useCardGrid(url);
 
   return (
     <Style.CustomCard>
