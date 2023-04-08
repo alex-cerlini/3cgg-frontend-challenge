@@ -11,7 +11,7 @@ import * as Style from './styles';
 import { CardGridProps } from './types';
 
 function CardGrid({ url }: CardGridProps) {
-  const { favorited, handleFavorite, data } = useCardGrid(url);
+  const { data, favorited, handleAdd, handleRemove } = useCardGrid(url);
 
   return (
     <Style.CustomCard>
@@ -19,7 +19,11 @@ function CardGrid({ url }: CardGridProps) {
         <Icon
           as={!favorited ? MdOutlineFavoriteBorder : MdOutlineFavorite}
           color={!favorited ? 'white' : 'red'}
-          onClick={handleFavorite}
+          onClick={
+            !favorited
+              ? () => handleAdd(data?.id)
+              : () => handleRemove(data?.id)
+          }
         />
       </Style.FavoriteContainer>
       <Style.CustomBody>
