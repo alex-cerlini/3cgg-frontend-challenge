@@ -3,12 +3,12 @@ import { MdOutlineFavorite, MdOutlineFavoriteBorder } from 'react-icons/md';
 import { Icon, Image } from '@chakra-ui/react';
 import Label from '@components/Label';
 import LabelEnum from '@components/Label/enum';
+import capitalizeFirstLetter from '@utils/capitalizeFirstLetter';
+import formatPokemonId from '@utils/formatPokemonId';
 
 import useCardGrid from './hook';
 import * as Style from './styles';
 import { CardGridProps } from './types';
-import capitalizeFirstLetter from '@utils/capitalizeFirstLetter';
-import formatPokemonId from '@utils/formatPokemonId';
 
 function CardGrid({ url }: CardGridProps) {
   const { favorited, handleFavorite, data } = useCardGrid(url);
@@ -39,14 +39,12 @@ function CardGrid({ url }: CardGridProps) {
           </Style.PokemonName>
         </Style.TitleContainer>
         <Style.TypesContainer>
-          {data?.types.map((item) => {
-            return (
-              <Label
-                title={String(item.type.name)}
-                type={LabelEnum[item.type.name as keyof typeof LabelEnum]}
-              />
-            );
-          })}
+          {data?.types.map((item) => (
+            <Label
+              title={String(item.type.name)}
+              type={LabelEnum[item.type.name as keyof typeof LabelEnum]}
+            />
+          ))}
         </Style.TypesContainer>
       </Style.CustomFooter>
     </Style.CustomCard>

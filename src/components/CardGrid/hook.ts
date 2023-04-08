@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState } from 'react';
 import { useQuery } from 'react-query';
+
 import { PokemonDataProps } from './types';
 
 const useCardGrid = (url: string) => {
