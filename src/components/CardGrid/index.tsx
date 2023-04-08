@@ -14,7 +14,7 @@ function CardGrid({ url }: CardGridProps) {
   const { data, favorited, handleAdd, handleRemove } = useCardGrid(url);
 
   return (
-    <Style.CustomCard>
+    <Style.CustomCard favorited={favorited}>
       <Style.FavoriteContainer>
         <Icon
           as={!favorited ? MdOutlineFavoriteBorder : MdOutlineFavorite}

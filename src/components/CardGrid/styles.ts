@@ -14,7 +14,9 @@ import {
 } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 
-export const CustomCard = styled(Card)<CardProps>`
+export const CustomCard = styled(Card)<CardProps & { favorited: boolean }>`
+  border: 2px solid;
+  border-color: ${(props) => (props.favorited ? '#A2884F' : 'transparent')};
   position: relative;
   width: 300px;
   height: 350px;
