@@ -1,4 +1,5 @@
 import MenuTemplate from '@templates/menu';
+
 import * as Style from './styles';
 
 function Home() {

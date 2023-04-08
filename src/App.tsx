@@ -1,8 +1,8 @@
+import { QueryClient, QueryClientProvider } from 'react-query';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Home from '@pages/Home';
 import List from '@pages/List';
-import { QueryClient, QueryClientProvider } from 'react-query';
 
 const queryClient = new QueryClient();
 

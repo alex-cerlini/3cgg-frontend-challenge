@@ -8,7 +8,7 @@ import useCardGrid from './hook';
 import * as Style from './styles';
 import { CardGridProps } from './types';
 
-function CardGrid({ name, url }: CardGridProps) {
+function CardGrid({ url }: CardGridProps) {
   const { favorited, handleFavorite } = useCardGrid(url);
 
   return (

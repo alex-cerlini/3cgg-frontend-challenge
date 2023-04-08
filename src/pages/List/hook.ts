@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useQuery } from 'react-query';
+
 import { PokemonDataProps } from './types';
 
 const useList = () => {
