@@ -11,7 +11,7 @@ function List() {
     <MenuTemplate>
       <Container>
         {data?.map((item) => (
-          <CardGrid name={item.name} url={item.url} />
+          <CardGrid url={item.url} />
         ))}
       </Container>
     </MenuTemplate>

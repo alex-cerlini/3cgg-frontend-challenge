@@ -7,9 +7,11 @@ import LabelEnum from '@components/Label/enum';
 import useCardGrid from './hook';
 import * as Style from './styles';
 import { CardGridProps } from './types';
+import capitalizeFirstLetter from '@utils/capitalizeFirstLetter';
+import formatPokemonId from '@utils/formatPokemonId';
 
 function CardGrid({ url }: CardGridProps) {
-  const { favorited, handleFavorite } = useCardGrid(url);
+  const { favorited, handleFavorite, data } = useCardGrid(url);
 
   return (
     <Style.CustomCard>
@@ -22,19 +24,29 @@ function CardGrid({ url }: CardGridProps) {
       </Style.FavoriteContainer>
       <Style.CustomBody>
         <Image
-          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-          alt="nome do pokemon"
+          src={data && data.sprites.other['official-artwork'].front_default}
+          alt={data?.name && capitalizeFirstLetter(data?.name)}
           maxHeight={200}
         />
       </Style.CustomBody>
       <Style.CustomFooter>
         <Style.TitleContainer>
-          <Style.PokemonId>N° 001</Style.PokemonId>
-          <Style.PokemonName>Bulbasaur</Style.PokemonName>
+          <Style.PokemonId>
+            N° {data?.id && formatPokemonId(data?.id)}
+          </Style.PokemonId>
+          <Style.PokemonName>
+            {data?.name && capitalizeFirstLetter(data?.name)}
+          </Style.PokemonName>
         </Style.TitleContainer>
         <Style.TypesContainer>
-          <Label title="grass" type={LabelEnum.grass} />
-          <Label title="poison" type={LabelEnum.poison} />
+          {data?.types.map((item) => {
+            return (
+              <Label
+                title={String(item.type.name)}
+                type={LabelEnum[item.type.name as keyof typeof LabelEnum]}
+              />
+            );
+          })}
         </Style.TypesContainer>
       </Style.CustomFooter>
     </Style.CustomCard>
