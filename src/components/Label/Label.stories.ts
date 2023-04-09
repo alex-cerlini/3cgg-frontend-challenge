@@ -6,7 +6,6 @@ import LabelEnum from './enum';
 const meta: Meta<typeof Label> = {
   title: 'Label',
   component: Label,
-  // tags: ['autodocs'],
 };
 
 export default meta;
