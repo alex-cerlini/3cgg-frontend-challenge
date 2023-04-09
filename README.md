@@ -57,6 +57,7 @@ This application uses the following technologies:
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Redux](https://redux.js.org/)
 - [Commitizen](https://github.com/commitizen/cz-cli)
+- [Storybook](https://storybook.js.org/)
 
 ---
 
